@@ -1,0 +1,86 @@
+.main{
+    padding: 0 10rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main h2{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+.main p{
+    font-size: .9rem;
+    margin: 0 0 3rem 0;
+}
+.main label{
+    display: block;
+    margin: 1rem 0 .5rem 0;
+    font-weight: 600;
+}
+
+.main input[type=text], .main input[type=email], .main input[type=tel]{
+    width: 80%;
+    height: 2rem;
+    border-radius: 5px;
+    border: 2px solid #d7d7d7;
+    padding: 0 1rem;
+    
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.banner{
+    background-image: url('../../../public/foguete-entregas-alibaba.jpg');
+    width: 550px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+.main input[type=submit]{
+    width: 87%;
+    height: 3rem;
+    margin-top: 3rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .main{
+        justify-content: center;
+    }
+    .banner{
+        display: none;
+    }
+    .main input[type=text], .main input[type=email], .main input[type=tel]{
+        width: 90%;
+    }
+    .main input[type=submit]{
+        width: 95%;
+    }
+    .mainWrapper{
+        width: 100%;
+    }
+}
+
+@media (max-width: 426px){
+    .main{
+        padding: 0;
+    }
+    .main h2 {
+        font-size: 2rem;
+    }
+    .main p{
+        font-size: .8rem;
+    }
+}

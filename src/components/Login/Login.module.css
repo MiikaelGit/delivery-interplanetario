@@ -1,0 +1,92 @@
+.main{
+    padding: 0 10rem;
+    margin: 5rem auto;
+}
+
+.main h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+} 
+
+.mainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5rem;
+
+}
+.avatarImage{
+    background-image: url('../../../public/user_icon_149329.png');
+    width: 400px;
+    height: 400px;
+    margin-top: 3rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: #000 3px solid;
+}
+
+.main p{
+    display: flex;
+    justify-content: space-between;
+    gap: .2rem;
+}
+.main p span{
+    display: flex;
+    
+}
+
+.mainLink{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.mainLink a{
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.informationsContainer{
+    width: 50%;
+}
+
+.mainDescription{
+   margin-top: 3rem;
+}
+
+@media(max-width: 1024px){
+    .main{
+        padding: 0;
+    }
+    .main h2{
+        text-align: center;
+    }
+    .mainContainer{
+        flex-direction: column;
+    }
+    .informationsContainer{
+        width: 70%;
+    }
+}
+
+@media (max-width: 426px){
+    .main{
+        font-size: 90%;
+    }
+    .avatarImage{
+        width: 300px;
+        height: 300px;
+    }
+    .main h2{
+        font-size: 3rem;
+    }
+    .mainLink{
+        justify-content: center;
+    }
+
+    .mainLink a{
+        font-size: 1.3rem;
+    }
+}

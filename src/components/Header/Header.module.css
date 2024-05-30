@@ -1,0 +1,100 @@
+.header{
+    padding: 0 10rem;
+    display: flex;
+    width: 90wv;
+    height: 5rem;
+    border-bottom: #000 1px solid;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttonsContainer{
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+
+.buttonRegister {
+    background-color: #fff;
+    color: #000;
+    border: #000 2px solid;
+}
+
+
+.buttonEdit{
+    background-color: #000;
+    color: #fff;
+    transition: all .2s ease-in;
+}
+
+.buttonEdit, .buttonRegister {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.headerList{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    
+}
+
+.headerList a{
+    text-decoration: none;
+    color: #000;
+    transition: all 5s ease-in-out;
+    position: relative;
+}
+
+.headerList a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.8px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.headerList a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.headerContainer nav{
+    margin: 0 auto;
+}
+
+.menuHamburguer{
+    display: none;
+    background-color: inherit;
+    border: none;
+}
+
+@media(max-width: 1024px){
+    
+    .buttonEdit, .buttonRegister, .headerList{
+        display: none;
+    }
+    .menuHamburguer{
+        display: inline-block;
+    }
+}
+
+@media(max-width: 426px){
+    .header{
+        padding: 0;
+    }
+    .header h1{
+        font-size: 1.5rem;
+    }
+}
