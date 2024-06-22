@@ -1,6 +1,6 @@
 # Delivery Interplanetário
 
-Desafio de um processo seletivo o qual eu participei que consiste em criar um projeto de um delivery futurista que faz um link entre a Terra e Marte, com o intuito de importar e exportar produtos entre os dois planetas. Os produtos são armazenados no planeta vermelho em lugares chamadas de lotes, que são grandes armazéns, estes produtos podem ser trazidos de volta para a terra.
+Desafio de um processo seletivo o qual eu participei que consiste em criar um projeto de um delivery futurista que faz um link entre a Terra e Marte, com o intuito de importar e exportar produtos entre os dois planetas. Os produtos são armazenados no planeta vermelho em lugares chamadas de Lotes (ou fábricas), que são grandes armazéns, estes produtos podem ser trazidos de volta para a terra.
 
 ## Informações adicionais
 A aplicação tem três rotas: 
